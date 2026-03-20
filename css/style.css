@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* BASIC FORMATTING */
 html {
@@ -15,23 +15,36 @@ img {
 }
 
 body {
-  font-family: Poppins;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
-  color: white;
+  line-height: 1.5;
+  color: black;
   background-color: #063270;
   margin: 0;
   padding: 0;
 }
 
 main {
-  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #cadbf8;
   border-bottom: 5px solid #ffd034;
   border-top: 5px solid #ffd034;
+  padding: 1rem;
 }
 h1 {
-    font-weight: 300;}
+    font-weight: 300;
+  font-size: 3rem;
+line-height: 1.1667;
+text-transform: uppercase;}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.16672;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 header {
-  border: solid hotpink 3px;
   color: white;
   text-transform: uppercase;
   font-weight: normal;
@@ -44,8 +57,7 @@ header {
 
 
 nav ul {
-  border: solid purple 3px   ;
-  
+    color: white;
   text-decoration: none;
   list-style: none;
   padding: 0;
@@ -53,25 +65,70 @@ nav ul {
   display: flex;
   gap: 1rem;
 }
-a {
-  color: white;
-  background-color: #2b70e4;
-}
 
 .hero{
-  border: solid orange 3px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  /* color: white; */
-  /* display: flex; */
-  /* justify-content: center */
-  /* align-items: center; */
-  /* text-align: center; */
-  /* padding: 1rem; */
+  background-color: white;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;}
+
+ a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .card a{
+    background-color: #2b70e4;
+    padding: 1rem;
+    border-radius: 10px;
+    
+  
+  }
+  .hero-text a {
+    background-color: hero;
+    background-color: #209d5c;
+    padding: 1rem;
+    border-radius: 10px;
+
+  }
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  
+  
+}
+@media (min-width: 650px) {
+ .cards-wrapper {
+     
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    
+ }
+}
+@media (min-width: 1000px){
+  
+ .cards-wrapper {     
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+}
+
+
