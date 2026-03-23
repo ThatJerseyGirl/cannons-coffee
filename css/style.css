@@ -114,12 +114,18 @@ footer {
   padding-left: 10px;
   
   
-}
-@media (min-width: 650px) {
+  @media (max-width: 1000px) {
+   .color-wrap { 
+    background-color:  #cadbf8;
+  }
+  
+@media (min-width: 1000px) 
+</div>{
  .cards-wrapper {
-     
+   
     display: grid;
    grid-template-columns: 1fr 1fr;
+  
     
  }
 }
