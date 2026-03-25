@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -25,15 +26,14 @@ body {
 }
 
 main {
-  /* width: 90%; */
-  /* margin: 0 auto; */
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: #cadbf8; */
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
+ 
   padding: 1rem;
+   border-bottom: 5px solid #ffd034;
+  border-top: 5px solid #ffd034;
 }
+
 h1 {
   font-weight: 300;
   font-size: 3rem;
@@ -47,6 +47,7 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
 }
+
 header {
   color: white;
   text-transform: uppercase;
@@ -58,6 +59,8 @@ header {
   gap: 1rem;
 
 
+}
+
 nav ul {
   color: white;
   text-decoration: none;
@@ -67,6 +70,13 @@ nav ul {
   display: flex;
   gap: 1rem;
 }
+
+.latte-page-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: white;
+} 
 
 .hero {
   display: grid;
@@ -99,6 +109,7 @@ a {
   border-radius: 10px;
   font-size: 13px;
 }
+
 .hero-text a {
   background-color: hero;
   background-color: #209d5c;
@@ -128,12 +139,14 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 @media (min-width: 650px) {
   .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 1200px) {
   .cards-wrapper {
     display: grid;
