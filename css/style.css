@@ -28,18 +28,13 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
- 
-  padding: 1rem;
-   border-bottom: 5px solid #ffd034;
+  border-bottom: 5px solid #ffd034;
   border-top: 5px solid #ffd034;
+  background-color: #cadbf8;
+
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 3rem;
-  line-height: 1.1667;
-  text-transform: uppercase;
-}
+
 
 h2 {
   font-size: 2.5rem;
@@ -53,12 +48,23 @@ header {
   text-transform: uppercase;
   font-weight: normal;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+
+      
+}
+
+.logobar {
+  color: white;
+  display: flex;
+  align-items: center;
   gap: 1rem;
+}
 
-
+.nav {
+  display: flex;
+   align-items: center;
 }
 
 nav ul {
@@ -68,14 +74,29 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 1rem;
 }
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}*/
+
+
 
 .latte-page-hero {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  color: white;
+  color: #2b70e4;
+  background-color:  #cadbf8;
+
 } 
 
 .hero {
@@ -88,7 +109,7 @@ nav ul {
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -116,29 +137,28 @@ a {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  width: 12rem;
 }
 
 footer {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-left: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .color-wrap {
   padding: 1rem;
   background-color: #cadbf8;
+   display: grid;
+    grid-template-columns: 1fr;
 }
 
-@media (max-width: 1000px) {
-  .color-wrap {
-    /* background-color: #cadbf8; */
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
+
+   
 
 @media (min-width: 650px) {
   .cards-wrapper {
@@ -148,8 +168,33 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  .nav-bar > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+  }
+
+  .logobar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
   .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
