@@ -107,10 +107,10 @@ nav ul {
 }
 
 .hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
+padding: auto;
+border-radius: 10px;
+text-align: center;
+margin: auto;
 }
 
 a {
