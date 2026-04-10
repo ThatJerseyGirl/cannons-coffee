@@ -42,76 +42,96 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
 }
-
-header {
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
+.top-header {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-
-      
+  padding: 20px;
 }
 
-.logobar {
-  color: white;
+.brand {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 12px;
 }
 
-.nav {
-  display: flex;
-   align-items: center;
+.logo {
+  width: 70px;
+  height: auto;
+  display: block;
 }
 
-nav ul {
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  padding: 0;
+.brand h2 {
   margin: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
+  color: #cadbf8;
 }
 
-.nav-bar {
+.nav-bar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-}*/
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;color: #cadbf8;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #cadbf8;
+}
 
 
 
-.latte-page-hero {
+ .cards-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  color: #2b70e4;
-  background-color:  #cadbf8;
-
-} 
+  gap: 20px;
+}
 
 .hero {
-  display: grid;
+     display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  background-color: white;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+   color: #2b70e4;
+  background-color:  #cadbf8;
 }
 
-.hero-text {
-padding: auto;
-border-radius: 10px;
-text-align: center;
-margin: auto;
+.latte-page-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+   color: #2b70e4;
+  background-color:  #cadbf8;
 }
+
+
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h2 {
+  margin-top: 0;
+}
+
+.hero-text p {
+  line-height: 1.5;
+}
+
+.hero-text a {
+.hero-text {
+  text-align: center;
+}
+
+.hero-text a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+}
+}
+
 
 a {
   color: #ffffff;
@@ -120,16 +140,6 @@ a {
   margin-top: 1rem;
 }
 
-.card {
-  margin: 1rem;
-}
-
-.card a {
-  background-color: #2b70e4;
-  padding: 0.6rem;
-  border-radius: 10px;
-  font-size: 13px;
-}
 
 .hero-text a {
   background-color: hero;
