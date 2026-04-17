@@ -24,10 +24,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
-main {
-  max-width: 1200px;
+.container {
+   max-width: 1200px;
   margin: 0 auto;
+
+}
+main {
+ 
   border-bottom: 5px solid #ffd034;
   border-top: 5px solid #ffd034;
   background-color: #cadbf8;
@@ -44,7 +47,8 @@ h2 {
 }
 .top-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 }
@@ -82,7 +86,8 @@ h2 {
 
 
  .cards-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -93,7 +98,7 @@ h2 {
   gap: 30px;
   padding: 40px;
    color: #2b70e4;
-  background-color:  #cadbf8;
+  background-color:  white;
 }
 .latte-page-hero {
   display: flex;
@@ -115,12 +120,6 @@ h2 {
   text-align: center;
 }
 
-.hero-text a {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-}
-
 
 a {
   color: #ffffff;
@@ -131,12 +130,14 @@ a {
 
 
 .hero-text a {
-  background-color: hero;
   background-color: #209d5c;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
   width: 12rem;
+    display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
 }
 
 footer {
@@ -166,7 +167,11 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .nav-bar > div {
     display: flex;
     justify-content: space-between;
@@ -191,9 +196,11 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-}
-  .cards-wrapper {
+ 
+ }
+ .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+  
