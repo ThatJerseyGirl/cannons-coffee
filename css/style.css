@@ -95,41 +95,30 @@ h2 {
    color: #2b70e4;
   background-color:  #cadbf8;
 }
-
 .latte-page-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
   padding: 40px;
-   color: #2b70e4;
-  background-color:  #cadbf8;
 }
 
-
+.latte-page-hero img {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
 
 .hero-text {
   width: 50%;
-}
-
-.hero-text h2 {
-  margin-top: 0;
-}
-
-.hero-text p {
-  line-height: 1.5;
-}
-
-.hero-text a {
-.hero-text {
   text-align: center;
 }
 
 .hero-text a {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 15px;
   text-decoration: none;
-}
 }
 
 
