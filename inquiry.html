@@ -9,12 +9,6 @@
 </head>
 
 <body>
-
-</body>
-
-</html>
-
-<body>
     <div class="container">
         <header class="top-header">
             <div class="brand">
@@ -27,7 +21,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="latte.html">Coffee</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">About</a></li>
                         <li><a href="mailto:shannonmartinez358@gmail.com">Contact</a></li>
                         <li><a href="inquiry.html">Inquiry</a></li>
                         <li><a href="login.html">Login</a></li>
@@ -36,22 +30,41 @@
             </nav>
         </header>
         <main>
-            <h1>Login</h1>
+            <h1>Inquiry</h1>
 
-            <form id="loginForm">
+            <form action="form" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required />
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required />
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required />
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
 
-                <button type="submit">Submit</button>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+
+                <label for="flavor">Favorite Coffee Flavor</label>
+                <select id="flavor" name="flavor" required>
+                    <option value="">--Choose a flavor--</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="hazelnut">Hazelnut</option>
+                </select>
+
+                <p>What are you interested in?</p>
+
+                <input type="radio" id="buying" name="interest" value="buying coffee" required />
+                <label for="buying">Buying Coffee</label>
+
+                <input type="radio" id="employment" name="interest" value="seeking employment" />
+                <label for="employment">Seeking Employment</label>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
-
-            <p id="welcomeMessage"></p>
 
 
         </main>

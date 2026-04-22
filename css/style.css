@@ -140,6 +140,11 @@ a {
   text-decoration: none;
 }
 
+form {
+padding: 2rem;
+text-align:center;
+}
+
 footer {
   color: white;
   display: flex;

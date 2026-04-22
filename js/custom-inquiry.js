@@ -1,16 +1,11 @@
-const loginForm = document.getElementById("loginForm");
-const welcomeMessage = document.getElementById("welcomeMessage");
+const form = document.querySelector("form");
 
-loginForm.addEventListener("submit", function (event) {
+function onFormSubmit(event) {
   event.preventDefault();
+  const data = new FormData(event.target);
+  const dataObject = Object.fromEntries(data.entries());
+  console.log(dataObject);
+  form.reset();
+}
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  console.log({ name, email, password });
-
-  welcomeMessage.textContent = `Welcome, ${name}! You are logged in!`;
-
-  loginForm.style.display = "none";
-});
+form.addEventListener("submit", onFormSubmit);
