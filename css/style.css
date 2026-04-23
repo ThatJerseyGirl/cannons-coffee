@@ -190,10 +190,12 @@ footer {
 }
 
 .login {
-  text-align:center;
-}
-
-   
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}  
 
 @media (min-width: 650px) {
   .cards-wrapper {
