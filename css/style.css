@@ -189,6 +189,9 @@ footer {
     grid-template-columns: 1fr;
 }
 
+.login {
+  text-align:center;
+}
 
    
 
